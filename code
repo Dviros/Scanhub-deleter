@@ -1,0 +1,8 @@
+$.each($('td a'),function(key,value){
+val = value.text;
+org = $('div h1 a')[0].text;
+url = 'https://scanhub.shodan.io/'+org+'/host/delete/'+ val;
+$.get(url,function(rslt){
+console.log(rslt);
+});
+});
